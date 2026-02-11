@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Product Catalog</title>
+    <style>
+        :root { --primary: #2c3e50; --accent: #27ae60; --light: #f4f7f6; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; background: var(--light); color: #333; }
+        .header { background: var(--primary); color: white; text-align: center; padding: 40px 20px; }
+        .container { max-width: 1000px; margin: 20px auto; padding: 20px; }
+        
+        /* 产品网格布局 */
+        .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .product-card { background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: 0.3s; }
+        .product-card:hover { transform: translateY(-5px); }
+        .product-img { width: 100%; height: 200px; background: #ddd; object-fit: cover; }
+        .product-info { padding: 20px; }
+        .product-title { font-size: 1.5rem; margin: 0 0 10px; color: var(--primary); }
+        
+        /* 联系按钮 */
+        .contact-section { text-align: center; margin-top: 50px; padding: 40px; background: white; border-radius: 10px; }
+        .btn { display: inline-block; padding: 15px 30px; margin: 10px; border-radius: 50px; text-decoration: none; font-weight: bold; color: white; transition: 0.3s; }
+        .btn-wechat { background: #07C160; }
+        .btn-whatsapp { background: #25D366; }
+        .btn:hover { opacity: 0.8; box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>Quality Products, Global Delivery</h1>
+    <p>Professional Supplier of Lubricants & Solar Solutions</p>
+</div>
+
+<div class="container">
+    <div class="product-grid">
+        <div class="product-card">
+            <div class="product-img" style="display: flex; align-items: center; justify-content: center; background: #e0e0e0;">
+                [此处放润滑油图片]
+            </div>
+            <div class="product-info">
+                <h3 class="product-title">Premium Lubricants</h3>
+                <p>High-performance industrial and automotive lubricants designed for extreme conditions.</p>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-img" style="display: flex; align-items: center; justify-content: center; background: #e0e0e0;">
+                [此处放太阳能板图片]
+            </div>
+            <div class="product-info">
+                <h3 class="product-title">Solar Panels</h3>
+                <p>Efficient monocrystalline solar modules for residential and commercial energy projects.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact-section">
+        <h2>Interested in Ordering?</h2>
+        <p>Contact our sales team directly via WeChat or WhatsApp for pricing and logistics.</p>
+        
+        <a href="#" class="btn btn-wechat">WeChat: YourID</a>
+        <a href="https://wa.me/8613302057351>
+    </div>
+</div>
+
+</body>
+</html>
